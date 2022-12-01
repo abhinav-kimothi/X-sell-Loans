@@ -72,9 +72,9 @@ def prediction(Income, CCAvg, cd_account, education, family_size):
         }
     }
 
-    return response
+    return response.get("data").get("outcome")
 
-print(prediction(79, 3.6, 1, 'postgrad', 1))
+print(prediction(5, 1, 0, 'postgrad', 1))
 
 
  
